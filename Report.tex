@@ -15,6 +15,7 @@
 %\usepackage{titlesec}
 
 \usepackage{graphicx}
+\usepackage{capt-of}
 
 %\setlength{\leftskip}{25pt}
 %\makeatother
@@ -68,8 +69,90 @@ The major objectives set by the company are:
 \end{enumerate}
 
 \chapter{Products and Services}
+\section{Variable Frequency Drive}
+\begin{enumerate}
+  \item Introduction \\
+    A Variable Frequency Drive (VFD) is a type of motor controller that drives an electric motor by varying the frequency and voltage supplied to the electric motor. Other names for a VFD are variable speed drive, adjustable speed drive, adjustable frequency drive, AC drive, and inverter. As the application's motor speed requirement change, the VFD can simply turn up or down the motor speed to meet the speed requirement.
 
+  \item Working\\
+    The first stage of a Variable Frequency AC Drive, or VFD, is the Converter. The converter is a comprised of six diodes, which are similar to check values used in plumbing systems. They allow current to flow in only one direction; the direction shown by the arrow in the diode symbol. For example, whenever A-phase voltage (voltage is similar to pressure in plumbing systems) is more positive than B or C phase voltages, then that diode will open and allow current to flow. When B-phase becomes more positive than A-phase, then the B-phase diode will open and the A-phase diode will close. The same is true for the 3 diodes on the negative side of the bus. Thus, we get six current "pulses" as each diode opens and closes. This is called a "six-pulse VFD", which is the standard configuration for current Variable Frequency Drives.
 
+    \begin{center}
+        \includegraphics{vfd1}
+        \captionof{figure}{Converter in a VFD}
+    \end{center}
+
+    If the drive is operating on a 480V power system, then the 480V rating is "rms" or root-mean-squared. The peaks on a 480V system are 679V. The VFD dc bus has a dc voltage along with an AC ripple. The voltage runs between approximately 580V and 680V.
+
+    \begin{center}
+        \includegraphics{vfd2}
+        \captionof{figure}{Converter with DC Bus in a VFD}
+    \end{center}
+
+    A capcitor is added to get rid of the AC ripple on the DC bus. A  capacitor operates in a similar fashion to a reservoir or accumulator in a plumbing system. This capacitor absorbs the ac ripple and delivers a smooth dc voltage. The AC ripple on the DC bus is typically less than 3 Volts. Thus, the voltage on the DC bus becomes "approximately" 650VDC. The actual voltage will depend on the voltage level of the AC line feeding the drive, the level of voltage unbalance on the power system, the motor load, the impedance of the power system, and any reactors or harmonic filters on the drive. \\
+
+    The diode bridge converter that converts AC-to-DC, is sometimes just referred to as a converter. The converter that converts the dc back to ac is also a converter, but to distinguish it from the diode converter, it is usually referred to as an "inverter". It is common in the industry to refer to any DC-to-AC converter as an inverter.
+
+    \begin{center}
+        \includegraphics{vfd3}
+        \captionof{figure}{Converter, DC Bus, and inverter in a VFD}
+    \end{center}
+
+    When one of the top switches in the inverter is closed, that phase of the motor is connected to the positive dc bus and the voltage on that phase becomes positive. When one of the bottom switches in the converter is closed, that phase is connected to the negative dc bus and becomes negative. Thus, any phase on the motor can be made positive or negative at will and can thus generate any frequency. Also, any phase can be made positive, negative, or zero.
+
+    \begin{center}
+      \includegraphics{vfd4}
+      \captionof{figure}{Output response of a VFD}
+    \end{center}
+
+    The output from the VFD is of "rectangular" wave form. VFD's do not produce a sinusoidal output. This rectangular waveform would not be a good choice for a general purpose distribution system, but is perfectly adequate for a motor.
+
+  \item Benefits
+    \begin{itemize}
+      \item Electric motor systems are responsible for more than 65\% of the power consumption in industry. Optimizing motor control systems using VFDs can reduce energy consumption and energy costs.
+      \item Using VFDs, equipments can be operated at optimimum and efficient speeds, thereby extending the equipment life and reducing maintenance costs.
+    \end{itemize}
+
+  \item VFDs by Paila Technology
+    \begin{itemize}
+      \item Current Market in Nepal
+        \begin{itemize}
+          \item VFDs for \textit{Allo} thread producing machine
+          \item VFDs for changing speed of DC motors in tempos
+          \item VFDs for automatic brick producing machines
+        \end{itemize}
+
+      \item Features
+        \begin{itemize}
+          \item Customizable for different applications
+          \item Production against possible drive failures
+          \item Quality support and maintenance
+          \item Compatible with single phase supply
+          \item Made for Nepali Industries
+        \end{itemize}
+
+      \item Technical Specification
+        \begin{center}
+          \begin{tabular}{|c|c|}
+            \hline
+            Parameters & Values \\
+            \hline
+            Input Voltage & 380 to 480V 3ph or 230V single phase \\
+            Input Frequency & 50Hz or 60Hz \\
+            Output Voltage & 0 to rated line voltage \\
+            Output Frequency & 0.5Hz to 200Hz \\
+            Switching Frequency & 3kHz to 12kHz \\
+            Rated Power & 0.5HP to 15 HP \\
+            Control Method & Linear V/f \\
+            Display & 7-segment or Alphanumeric LCD \\
+            Digital Inputs & 5V DC optically isolated \\
+            Analog Inputs & 0 to 5V \\
+            \hline
+          \end{tabular}
+        \end{center}
+    \end{itemize}
+    Resources: https://www.vfds.com/blog/what-is-a-vfd
+\end{enumerate}
 \chapter{Organization Structure}
 \chapter{Personnel Management}
 \section{Recruitment, Selection and Training}
